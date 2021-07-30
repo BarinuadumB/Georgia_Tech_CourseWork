@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+</head>
+<body>
+    <div class = "main">
+
+        <header class = "flex_container_header">    
+            <div id = "nameflex_item"> 
+                <strong>EMMANUEL BARIYIGA</strong> 
+            </div>
+            <nav class = "nav_item">
+                <button class= "navBtn" id= "about-me-button"><a href="./index.html" alt = "about-me"> About Me</a></button>
+                <button class= "navBtn" id= "education-button"><a href="./index.html" alt = "education"> Education</a></button>
+                <button class= "navBtn" id= "work-xp-button"><a href="./index.html" alt ="work experience"> Work Experience</a></button>
+                <button class= "navBtn" id= "hobbies-botton"><a href="./index.html" alt = "hobbies"> Hobbies </a></button>
+                <button class= "navBtn" id= "contact-button"><a href="./ContactUs.Html" alt = "contact us"> Contact Us </a></button>
+            </nav>
+        </header>
+
+        <section class = "flex_item" id = "Contact">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div> 
+        </section>
+    </div>
+</body>
+</html>
