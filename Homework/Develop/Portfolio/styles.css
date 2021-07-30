@@ -1,0 +1,184 @@
+body{
+    background-color: rgb(255, 255, 255) #F9F8F8;
+}
+
+.main{
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 100%;
+}
+
+#welcome_container{
+    display: flex;
+    border:1.5px solid ghostwhite;
+    background-color: ghostwhite;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+}
+.welcome_item
+{
+    flex: 1 1 100px;
+    padding:15px;
+    margin:5px;
+}
+
+#article{
+    height: 75%;
+}
+/*css style for navigation header*/
+.flex_container_header {
+    display: flex;
+    background-color: #d9e3ed;
+    justify-content: space-between;
+}
+
+#nameflex_item{
+    border: 1.5px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav button{
+    padding: 10px;
+    border:1.5px solid ghostwhite;
+    margin: 5px;
+    float: left;
+    background-color: ghostwhite;
+}
+
+nav button:hover{
+  background-color: #B7C5ED;
+}
+
+/*css style for main flex_container section*/
+.flex_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #d9e3ed;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.flex_item{
+     background-color: ghostwhite;
+     border: 1.5px solid ghostwhite;
+     padding: 20px;
+     margin: 5px;
+     height: 25%;   
+}
+.flex_item:hover{
+  background-color: yellow;
+}
+
+.h2_element{
+    margin: 15px;
+}
+
+/**#image_pic{
+  padding: auto;
+}*/
+img{
+  margin: auto;
+  padding: auto;
+}
+@media screen and (max-width: 812px) {
+    body {
+      background-color: olive;
+    }
+    .main{
+        margin: none;
+    }
+    .flex_container_header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex_container{
+        flex-direction: column;
+    }
+    .main{
+        margin-right: 0%;
+        margin-left: 0%;
+        height: 100%;
+    }
+    #welcome_container{
+      flex-direction: column;
+  }
+  #image_pic{
+    padding: auto;
+    margin: auto;
+  }
+  }
+
+
+#workxp{
+    padding: 5px;
+    background-color: ghostwhite;
+    border:ghostwhite solid;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+  /* Style inputs, select elements and textareas */
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } 
